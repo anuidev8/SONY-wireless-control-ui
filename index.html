@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless control</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <main class="main">
+        <svg id="maskSidenav" width="0" height="0">
+            <defs>
+                <clipPath id="sidenavMask">
+                    <path
+                        d="M400.46,769.88V90.45a19.33,19.33,0,0,0-3.52-11.16C384.88,62.24,378.7,50,394.44,27c2.78-3,6.48-17,6-17.34V6.12A5.42,5.42,0,0,0,395.28.5H5.7A5.41,5.41,0,0,0,.5,6.1V769.88a5.42,5.42,0,0,0,5.18,5.62H395.26a5.4,5.4,0,0,0,5.2-5.6Z"
+                        fill="none" stroke="#000" stroke-miterlimit="10" />
+                </clipPath>
+
+            </defs>
+        </svg>
+
+        <nav class="sidenav-content-wrapper" aria-label="services navigation" role="services navigation">
+           
+            <button class="btn btn-close-navigation circle-btn d-flex content-center btn-focus"
+            aria-label="close navigation">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1.8em"
+                width="1.8em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z">
+                </path>
+            </svg>
+        </button>
+           
+            <div id="sidenav" class="sidenav-content content-center">
+               
+                <ul id="link-list" class="sidenav__items list-style d-flex content-center">
+                    <li class="sidenav__item">
+                        <a href="/">
+                            <figure class="brand-logo brand-logo--sidenav">
+                                <img src="./images/brand/light-brand-sony.svg" width="200px" alt="Sony logo original" />
+
+                            </figure>
+
+                        </a>
+                    </li>
+                    <li class="sidenav__item sidenav__item-line">
+                        <a href="#">
+                            <svg class="sidenav__icon" xmlns="http://www.w3.org/2000/svg" width="93.688" height="68.705"
+                                viewBox="0 0 93.688 68.705">
+                                <g id="Grupo_29" data-name="Grupo 29" transform="translate(-252.656 -284.295)">
+                                    <g id="Grupo_22" data-name="Grupo 22" transform="translate(252.656 220.295)">
+                                        <g id="Grupo_21" data-name="Grupo 21" transform="translate(0 64)">
+                                            <path id="Trazado_24" data-name="Trazado 24"
+                                                d="M93.688,123.336V64H0v59.336H35.914v6.246H24.984V132.7H71.828v-3.123H57.775v-6.246Zm-39.037,6.246H39.037v-6.246H54.652ZM3.123,120.213V67.123H90.566v53.09Z"
+                                                transform="translate(0 -64)" />
+                                        </g>
+                                    </g>
+                                    <text id="TV" transform="translate(287 324)" font-size="22"
+                                        font-family="Poppins-Medium, Poppins" font-weight="500">
+                                        <tspan x="0" y="0">TV</tspan>
+                                    </text>
+                                </g>
+                            </svg>
+
+                        </a>
+                    </li>
+
+                    <li class="sidenav__item sidenav__item-line">
+                        <a href="#">
+                            <svg class="sidenav__icon" xmlns="http://www.w3.org/2000/svg" width="73.084" height="58.81"
+                                viewBox="0 0 73.084 58.81">
+                                <g id="Grupo_26" data-name="Grupo 26" transform="translate(0 -14.388)">
+                                    <g id="Grupo_25" data-name="Grupo 25" transform="translate(0 0.159)">
+                                        <path id="Trazado_25" data-name="Trazado 25"
+                                            d="M209.992,211.841a17.883,17.883,0,0,0-6.928,1.383,1.427,1.427,0,0,0,1.1,2.634,15.117,15.117,0,1,1-8.144,8.148,1.427,1.427,0,1,0-2.635-1.1,17.989,17.989,0,1,0,16.606-11.067Z"
+                                            transform="translate(-164.598 -181.625)" />
+                                        <path id="Trazado_26" data-name="Trazado 26"
+                                            d="M247.711,279.251a11.7,11.7,0,1,0-11.7-11.7A11.718,11.718,0,0,0,247.711,279.251Zm0-20.555a8.85,8.85,0,1,1-8.85,8.85A8.86,8.86,0,0,1,247.711,258.7Z"
+                                            transform="translate(-202.318 -219.344)" />
+                                        <path id="Trazado_27" data-name="Trazado 27"
+                                            d="M65.845,108.977H61.5l-4.984-8.434a1.427,1.427,0,0,0-1.229-.7H35.5a1.427,1.427,0,0,0-1.229.7l-4.984,8.434H21.126v-1.713a5.139,5.139,0,1,0-10.278,0v1.713H7.239A7.248,7.248,0,0,0,0,116.216v35.2a7.248,7.248,0,0,0,7.239,7.24H65.845a7.248,7.248,0,0,0,7.239-7.24v-35.2a7.247,7.247,0,0,0-7.239-7.24ZM36.311,102.7H54.476l3.711,6.281H32.6ZM13.7,107.264a2.284,2.284,0,0,1,4.568,0v1.713H13.7ZM70.23,151.412a4.389,4.389,0,0,1-4.384,4.385H7.239a4.39,4.39,0,0,1-4.385-4.385v-35.2a4.389,4.389,0,0,1,4.385-4.385H65.845a4.389,4.389,0,0,1,4.384,4.385v35.2Z"
+                                            transform="translate(0 -85.612)" />
+                                        <path id="Trazado_28" data-name="Trazado 28"
+                                            d="M309.433,301.2a2.787,2.787,0,0,1,2.783,2.783,1.427,1.427,0,0,0,2.855,0,5.645,5.645,0,0,0-5.638-5.638,1.427,1.427,0,1,0,0,2.855Z"
+                                            transform="translate(-264.04 -255.778)" />
+                                        <path id="Trazado_32" data-name="Trazado 32"
+                                            d="M84.85,245.841H77.427a1.427,1.427,0,0,0,0,2.855H84.85a1.427,1.427,0,0,0,0-2.855Z"
+                                            transform="translate(-65.152 -210.772)" />
+                                        <path id="Trazado_33" data-name="Trazado 33"
+                                            d="M227.387,248.695a1.428,1.428,0,1,0-1.009-.418A1.438,1.438,0,0,0,227.387,248.695Z"
+                                            transform="translate(-193.706 -210.771)" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="sidenav__item sidenav__item-line">
+                        <a href="#">
+                            <svg class="sidenav__icon" xmlns="http://www.w3.org/2000/svg" width="70.12" height="70.689"
+                                viewBox="0 0 70.12 70.689">
+                                <g id="Grupo_28" data-name="Grupo 28" transform="translate(291.001 81)">
+                                    <path id="Trazado_34" data-name="Trazado 34"
+                                        d="M-223.11-35.133c1.051-5.28,2.649-17.427-2.122-27.464a3.457,3.457,0,0,0-3.058-2.2,31.786,31.786,0,0,0-7.014-8.549,1.036,1.036,0,0,0-1.46.111,1.035,1.035,0,0,0,.111,1.46,29.711,29.711,0,0,1,6.176,7.333c-.149.071-1.743,1.08-2.528,1.58A26.653,26.653,0,0,0-255.94-75.947a26.667,26.667,0,0,0-22.934,13.082c-.785-.5-2.379-1.509-2.529-1.581A29.635,29.635,0,0,1-255.94-78.929a29.484,29.484,0,0,1,16.1,4.765,1.036,1.036,0,0,0,1.432-.3,1.036,1.036,0,0,0-.3-1.432A31.554,31.554,0,0,0-255.94-81a31.709,31.709,0,0,0-27.652,16.2c-1.34-.13-2.574,1.189-3.056,2.2-4.77,10.037-3.173,22.183-2.122,27.464a8.34,8.34,0,0,0-1.322,9.454l5.521,10.826a8.335,8.335,0,0,0,7.43,4.542c5.308,0,6.687-4.073,6.813-5.019l1.409-.718a5.078,5.078,0,0,0,2.54-2.976,5.08,5.08,0,0,0-.308-3.9l-6.369-12.489a5.118,5.118,0,0,0-6.876-2.231l-1.409.718a6.643,6.643,0,0,0-5.6.321c-2.437-13.358.64-21.967,2.166-25.1a1.91,1.91,0,0,1,2.691-.754c.826.532,1.829,1.172,2.981,1.9a1.861,1.861,0,0,1,.746,2.236,33.821,33.821,0,0,0-1.367,16.879,1.036,1.036,0,0,0,1.184.862,1.035,1.035,0,0,0,.862-1.183A31.721,31.721,0,0,1-276.418-57.6a3.974,3.974,0,0,0-.78-4.029,24.6,24.6,0,0,1,21.257-12.244,24.587,24.587,0,0,1,21.258,12.243,3.975,3.975,0,0,0-.781,4.03c1.218,3.288,2.874,10.137.521,19.446a5.109,5.109,0,0,0-3.88,2.743l-6.369,12.489a5.117,5.117,0,0,0,2.231,6.876l1.409.718c.126.946,1.329,5.019,6.813,5.019a8.335,8.335,0,0,0,7.43-4.542l5.521-10.825A8.34,8.34,0,0,0-223.11-35.133Zm-51.793.659,6.369,12.489c1.4,2.845-2.013,4.441-2.013,4.441-.107-.336-8.923-17.623-9.133-17.907C-279.68-35.451-276.626-37.371-274.9-34.474Zm-10.619-.556a3.127,3.127,0,0,1,4.592,1.486l8.105,15.892a3.287,3.287,0,0,1-1.492,4.588,6.261,6.261,0,0,1-8.41-2.732l-5.521-10.825A6.279,6.279,0,0,1-285.522-35.03Zm55.728-27.432a1.791,1.791,0,0,1,2.691.754c1.5,3.149,4.6,11.744,2.166,25.1a6.368,6.368,0,0,0-5.6-.321s-2-.985-2.307-1.073c2.361-9.675.611-16.849-.676-20.321a1.861,1.861,0,0,1,.746-2.236C-231.623-61.289-230.624-61.937-229.794-62.462Zm6.161,35.842-5.521,10.826a6.262,6.262,0,0,1-5.582,3.413,6.2,6.2,0,0,1-2.825-.681,3.288,3.288,0,0,1-1.493-4.59l.51-1A1.035,1.035,0,0,0-239-20.045a1.035,1.035,0,0,0-1.393.452s-.837,1.712-.944,2.049a3.112,3.112,0,0,1-2.013-4.441l6.369-12.488c1.614-2.989,4.777-.978,4.777-.978-.21.284-6.318,12.19-6.318,12.19a1.035,1.035,0,0,0,.452,1.393,1.035,1.035,0,0,0,1.392-.452l5.724-11.223a3.287,3.287,0,0,1,4.587-1.488A6.261,6.261,0,0,1-223.633-26.619Z" />
+                                </g>
+                            </svg>
+
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="social-media-items social-media-items--menu list-style d-flex">
+                    <li class="social-media-item social-media-item--menu">
+                        <a href="#" aria-labelledby="visitanos en facebook">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media-item social-media-item--menu">
+                        <a href="#" aria-labelledby="visitanos en instagram">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media-item social-media-item--menu">
+                        <a href="#" aria-labelledby="visitanos en twitter">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                hxmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+                <footer class="sidenav-footer">
+                    <p>© 2021 Sony Inc. Todos los Derechos Reservados.</p>
+
+                </footer>
+
+            </div>
+        </nav>
+
+
+        <!--    <svg id="filter" width="100%" height="100%">
+            <defs>
+                <filter id="blurFilter">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+                </filter>
+            </defs>
+        </svg> -->
+
+        <section class="main-section">
+            <svg id="bg-circles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1364.4 766.13">
+                <title>bg-circles</title>
+                <g id="fb34e98f-1cb0-455d-8f00-2babea5f142e" data-name="Layer 2">
+                    <g id="aba47518-afc4-4c95-a4c0-1e9688553095" data-name="Layer 1">
+                        <g id="2aa7920d-f114-4d31-98a8-68efbb5de81a" data-name="fg">
+                            <line x1="414.46" y1="182.25" x2="403.8" y2="192.91" fill="none" stroke="#ff80bd"
+                                stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+                            <line x1="414.46" y1="192.91" x2="403.8" y2="182.25" fill="none" stroke="#ff80bd"
+                                stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+                        </g>
+                        <g id="0461736f-ab0a-418f-8834-064eb9a85e3d" data-name="fg">
+                            <line x1="721.15" y1="727.48" x2="710.5" y2="738.14" fill="none" stroke="#ffaf33"
+                                stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+                            <line x1="721.15" y1="738.14" x2="710.5" y2="727.48" fill="none" stroke="#ffaf33"
+                                stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+                        </g>
+                        <g id="c2e6a0fe-44a2-489a-bc25-99632eba2ad7" data-name="fg">
+                            <line x1="316.35" y1="669.44" x2="301.57" y2="677.5" fill="none" stroke="#ff80bd"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <line x1="312.99" y1="680.86" x2="304.93" y2="666.08" fill="none" stroke="#ff80bd"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <path id="925eb301-2321-4b3e-93fb-a801c4f1c766" data-name="fg"
+                            d="M186.59,500l21.4,5.1-15.12,16Z" fill="none" stroke="#ffaf33" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" />
+                        <path id="db140a7a-4aa2-4658-ac05-6177857541ac" data-name="fg"
+                            d="M577.54,16.34l13.89,3.32L581.62,30Z" fill="none" stroke="#fff" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <rect id="ac3ef97e-4f85-485f-a0a3-b23c9c624e81" data-name="fg" x="445.53" y="584.27"
+                            width="16.76" height="16.76" transform="translate(-286.12 494.55) rotate(-45)" fill="none"
+                            stroke="#79beff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        <path id="15dfabdd-1d86-4299-a34a-fdec1f0a6208" data-name="fg"
+                            d="M324.3,16.35A15.34,15.34,0,1,1,309,1,15.34,15.34,0,0,1,324.3,16.35Z" fill="none"
+                            stroke="#c7ed72" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        <circle id="490ce424-5735-42c3-be81-d7dd1b4ca038" data-name="fg" cx="657.49" cy="607.67" r="4.3"
+                            fill="none" stroke="#71ff3d" stroke-linecap="round" stroke-linejoin="round" />
+                        <circle id="e4b48ec6-c39c-4fe7-b3cd-00a0a9969b94" data-name="fg" cx="251.47" cy="409.49" r="4.3"
+                            fill="none" stroke="#ff80bd" stroke-linecap="round" stroke-linejoin="round" />
+                        <path id="f5a2b335-8a80-4c70-be04-bd7775d79a99" data-name="tr"
+                            d="M1364.4,89.27a25.38,25.38,0,0,1,0-50.76" fill="none" stroke="#79beff"
+                            stroke-linejoin="round" stroke-width="0.75" />
+                        <path d="M.12,766a79.27,79.27,0,0,1,158.54,0" fill="none" stroke="#fff" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="0.25" />
+                    </g>
+                </g>
+            </svg>
+            <header class="header d-flex">
+                <button class="btn btn-open-navigation btn-focus" aria-label="open navigation"
+                    arial-controls="link-list" arial-expanded="false">
+                    <i> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 45">
+                            <defs>
+                                <style>
+                                    .a {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <rect class="a" width="51" height="5" />
+                            <rect class="a" width="39" height="5" transform="translate(12 20)" />
+                            <rect class="a" width="51" height="5" transform="translate(0 40)" />
+                        </svg>
+                    </i>
+                </button>
+
+                <nav class="navigation d-flex" aria-label="main navigation" role="main navigation">
+                    <ul class="navigation-items d-flex list-style">
+
+                        <li class="navigation-item brand">
+                            <a href="#">
+                                <figure class="brand-logo">
+                                    <img src="./images/brand/light-brand-sony.svg" width="200px"
+                                        alt="Sony logo original" />
+
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="navigation-item"><a href="#">About Me</a></li>
+                        <li class="navigation-item"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="main-content">
+                <div class="grid">
+                    <div class="grid-item">
+                        <h1 class="main-title">
+                            <span>Wireless control </span>
+                            DualSense <span>™</span>
+                        </h1>
+                        <p class="parragraph">
+                            Discover a more intense and immersive <span>gaming experience </span>with the innovative
+                            <span>PS5 controller™</span>,
+                            featuring haptic feedback and dynamic trigger.
+                        </p>
+                        <div class="content-actions  d-flex">
+                            <a class="btn-more  d-flex" role="button">
+                                <span>READ MORE</span>
+                                <i class="next-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.73 17.45">
+                                        <title>next-icon</title>
+                                        <g id="ec8a39ff-b3d5-419c-a8ca-5775b29c4b66" data-name="Layer 2">
+                                            <g id="aeb0e079-eba1-4e69-8baf-f3b8c40ef5f4" data-name="Layer 1">
+                                                <path
+                                                    d="M10.88,9.65,3.47,17.07a1.31,1.31,0,0,1-1.84,0h0L.39,15.84A1.3,1.3,0,0,1,.38,14h0L5.64,8.73.39,3.48a1.3,1.3,0,0,1,0-1.84h0L1.61.39a1.3,1.3,0,0,1,1.84,0h0L10.87,7.8a1.29,1.29,0,0,1,0,1.84ZM21.35,7.8,13.93.39a1.29,1.29,0,0,0-1.83,0h0L10.85,1.62a1.31,1.31,0,0,0,0,1.84h0L16.1,8.73,10.85,14a1.3,1.3,0,0,0,0,1.84h0l1.23,1.24a1.31,1.31,0,0,0,1.84,0h0l7.41-7.42a1.31,1.31,0,0,0,0-1.84Z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </i>
+                            </a>
+
+                            <a class="btn-play d-flex" role="button">
+                                <div class="btn-play-circle">
+                                    <div class="btn-play-icon d-flex">
+                                        <svg stroke-width="0" viewBox="0 0 448 512" height="1.3em" width="1.3em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="grid-item ">
+                        <div class="container d-flex">
+
+
+                            <figure class="control-img">
+                                <img src="./images/control.png" alt="sony-control" />
+
+                            </figure>
+
+                            <div class="extrainfo">
+                                <button  class="btn extrainfo__btn" aria-label="extrainfo">
+                                    <span class="plus-icon"></span>
+                                </button>
+                                <div class="control-tooltip d-flex content-center" id="extrainfo">
+                                    <div class="control-tooltip__key d-flex content-center">
+                                        <span>LT</span>
+                                    </div>
+                                    <p>Right Mouse</p>
+                                </div>
+                            </div>
+
+                            <div class="extrainfo">
+
+                                <button class="btn extrainfo__btn" aria-label="extrainfo">
+                                    <span class="plus-icon"></span>
+                                </button>
+                                <div class="control-tooltip d-flex content-center" id="extrainfo">
+                                    <div class="control-tooltip__key d-flex content-center">
+                                        <span>LT</span>
+                                    </div>
+                                    <p>Right Mouse</p>
+                                </div>
+
+                            </div>
+
+                            <div class="extrainfo">
+
+                                <button class="btn extrainfo__btn" aria-label="extrainfo">
+                                    <span class="plus-icon"></span>
+                                </button>
+                                <div class="control-tooltip d-flex content-center" id="extrainfo">
+                                    <div class="control-tooltip__key d-flex content-center">
+                                        <span>LT</span>
+                                    </div>
+                                    <p>Right Mouse</p>
+                                </div>
+
+                            </div>
+
+                            <div class="extrainfo">
+                                <button class="btn extrainfo__btn" aria-label="info key controls">
+                                    <span class="plus-icon"></span>
+                                </button>
+                                <div class="control-tooltip d-flex content-center" id="extrainfo">
+                                    <div class="control-tooltip__key d-flex content-center">
+                                        <span>LT</span>
+                                    </div>
+                                    <p>Right Mouse</p>
+                                </div>
+                            </div>
+
+                            <div class="extrainfo">
+                                <button class="btn extrainfo__btn" aria-label="info key controls">
+                                    <span class="plus-icon"></span>
+                                </button>
+                                <div class="control-tooltip d-flex content-center" id="extrainfo">
+                                    <div class="control-tooltip__key d-flex content-center">
+                                        <span>RT</span>
+                                    </div>
+                                    <p>Right Mouse</p>
+                                </div>
+                            </div>
+                            <div class="extrainfo">
+                                <button class="btn extrainfo__btn" aria-label="info key controls">
+                                    <span class="plus-icon"></span>
+                                </button>
+                                <div class="control-tooltip d-flex content-center" id="extrainfo">
+                                    <div class="control-tooltip__key d-flex content-center">
+                                        <span>RT</span>
+                                    </div>
+                                    <p>Right Mouse</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item scroll-down-box">
+                        <div class="container d-flex scroll-down">
+                            <button class="btn button-scroll-down d-flex">
+                                <i class="scroll-down-icon d-flex">
+                                    <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 21.73 17.45">
+                                        <title>next-icon</title>
+                                        <g id="ec8a39ff-b3d5-419c-a8ca-5775b29c4b66" data-name="Layer 2">
+                                            <g id="aeb0e079-eba1-4e69-8baf-f3b8c40ef5f4" data-name="Layer 1">
+                                                <path
+                                                    d="M10.88,9.65,3.47,17.07a1.31,1.31,0,0,1-1.84,0h0L.39,15.84A1.3,1.3,0,0,1,.38,14h0L5.64,8.73.39,3.48a1.3,1.3,0,0,1,0-1.84h0L1.61.39a1.3,1.3,0,0,1,1.84,0h0L10.87,7.8a1.29,1.29,0,0,1,0,1.84ZM21.35,7.8,13.93.39a1.29,1.29,0,0,0-1.83,0h0L10.85,1.62a1.31,1.31,0,0,0,0,1.84h0L16.1,8.73,10.85,14a1.3,1.3,0,0,0,0,1.84h0l1.23,1.24a1.31,1.31,0,0,0,1.84,0h0l7.41-7.42a1.31,1.31,0,0,0,0-1.84Z"
+                                                    fill="#1fa5e1" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <aside class="socials-medias d-flex" aria-labelledby="redes sociales" role="navigation">
+                        <ul class="social-media-items list-style">
+                            <li class="social-media-item">
+                                <a href="#" aria-labelledby="visitanos en facebook">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-media-item">
+                                <a href="#" aria-labelledby="visitanos en instagram">
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-media-item">
+                                <a href="#" aria-labelledby="visitanos en twitter">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 512 512" hxmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
