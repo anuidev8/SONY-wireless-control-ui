@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="93.688" height="68.705" viewBox="0 0 93.688 68.705">
+  <g id="Grupo_29" data-name="Grupo 29" transform="translate(-252.656 -284.295)">
+    <g id="Grupo_22" data-name="Grupo 22" transform="translate(252.656 220.295)">
+      <g id="Grupo_21" data-name="Grupo 21" transform="translate(0 64)">
+        <path id="Trazado_24" data-name="Trazado 24" d="M93.688,123.336V64H0v59.336H35.914v6.246H24.984V132.7H71.828v-3.123H57.775v-6.246Zm-39.037,6.246H39.037v-6.246H54.652ZM3.123,120.213V67.123H90.566v53.09Z" transform="translate(0 -64)" fill="#fff"/>
+      </g>
+    </g>
+    <text id="TV" transform="translate(287 324)" fill="#fff" font-size="22" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">TV</tspan></text>
+  </g>
+</svg>
